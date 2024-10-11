@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\muthu\OneDrive\ドキュメント\project\port\assets\css\styles.css">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #111;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        section.home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+        .home-content h1 {
+            font-size: 3.5rem;
+        }
+
+        .home-content h3.typing-text {
+            font-size: 2.5rem;
+        }
+
+        .home-content p {
+            font-size: 1.7rem; /* Increased font size for the paragraph */
+            margin-bottom: 20px;
+        }
+
+        .home-content .btn {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+        }
+
+        .home-img img {
+            width: 250px; /* Reduced profile image size */
+            border-radius: 50%;
+            margin-left: 40px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Muthupalani</a>
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="#">Skills</a>
+            <a href="#">About</a>
+            <a href="#">Certification</a>
+            <a href="project.html">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Muthu</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Greetings! My name is Muthupalani R, and I am an emerging professional in the fields of Artificial Intelligence and Data Science, based in Coimbatore, India. Driven by a deep passion for technology and analytical problem-solving, I focus on Python development, machine learning, and MLOps. My objective is to harness the power of AI to address intricate challenges, enhance organizational efficiency, and facilitate data-driven decision-making. I am dedicated to continuous learning and actively exploring cutting-edge technologies to remain at the forefront of the industry.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/muthu-palani-54310826a/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Muthupalani">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/muthupalani/">
+                    <span class="icon-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" width="40" height="40">
+                    </span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+        <div class="home-img">
+            <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\muthu.jpg" alt="Muthu" />
+        </div>
+    </section>
+</body>
+</html>

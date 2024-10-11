@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthupalani Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: white; /* Text color */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #111; /* Header background */
+        }
+        header img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        header .name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #b74b4b; /* Name in red */
+        }
+        .projects-heading {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #b74b4b; /* Heading in red */
+            margin-top: 20px;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for projects */
+            grid-template-rows: repeat(2, 1fr);    /* 2 rows for projects */
+            gap: 20px; /* Small gap between projects */
+            justify-content: center;
+            align-items: center;
+        }
+        .project-box {
+            background-color: #222; /* Darker box color */
+            color: #b74b4b; /* Project title in red */
+            border: 2px solid #b74b4b; /* Border color */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            height: 100%; /* Full height to make it square */
+            opacity: 0; /* Initially hidden for animation */
+            transform: translateY(50px); /* Slide up */
+            animation: fadeInUp 1s ease forwards; /* Animation */
+        }
+        .project-box:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .project-box:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .project-box:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .project-box:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Slide to normal position */
+            }
+        }
+        
+        /* Cross over zoom effect */
+        section:hover .project-box {
+            transform: scale(0.9); /* Initially zoom out all boxes when section is hovered */
+            transition: transform 0.3s;
+        }
+        .project-box:hover {
+            transform: scale(1.1); /* Zoom in the specific box hovered */
+            box-shadow: 0px 15px 35px rgba(183, 75, 75, 0.7); /* Red shadow on hover */
+        }
+
+        .project-box img {
+            width: 400px;
+            height: 150px;
+        }
+        .project-box h3 {
+            margin: 10px 0;
+            text-align: center;
+            color: #b74b4b;
+        }
+        .project-box p {
+            text-align: center;
+            color: white;
+        }
+        .more-projects {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .more-projects a {
+            color: #b74b4b;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="name">Muthupalani</div>
+        <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\muthu.jpg" alt="Muthupalani Profile">
+    </header>
+
+    <div class="projects-heading">Projects</div>
+
+    <section id="projects">
+        <!-- Square Project Box -->
+        <div class="project-box" onclick="window.open('https://github.com/Muthupalani/movie-recommend-using-ml', '_blank')">
+            <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\mrs.jpeg" alt="Movie Recommendation System">
+            <h3>Movie Recommendation System</h3>
+            <p>An AI-based tool to recommend movies based on user preferences.</p>
+        </div>
+        
+        <!-- Square Project Box -->
+        <div class="project-box" onclick="window.open('https://github.com/Muthupalani/sign-language-detection-python', '_blank')">
+            <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\sign.jpeg" alt="Sign Language Detection">
+            <h3>Sign Language Detection</h3>
+            <p>A real-time sign language detection system using computer vision.</p>
+        </div>
+        
+        <!-- Square Project Box -->
+        <div class="project-box" onclick="window.open('https://github.com/Muthupalani/Chatbot-about-me', '_blank')">
+            <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\chatbot.jpeg" alt="Chatbot About Me">
+            <h3>Chatbot About Me</h3>
+            <p>An interactive chatbot that knows everything about me.</p>
+        </div>
+        
+        <!-- Square Project Box -->
+        <div class="project-box" onclick="window.open('https://github.com/Muthupalani/wine-quality-predictor', '_blank')">
+            <img src="C:\Users\muthu\OneDrive\ドキュメント\project\port\images\wine.jpeg" alt="Wine Quality Predictor">
+            <h3>Wine Quality Predictor</h3>
+            <p>Predicts wine quality based on various features using ML.</p>
+        </div>
+    </section>
+
+    <div class="more-projects">
+        <p>
+            Explore more on my <a href="https://github.com/Muthupalani" target="_blank">GitHub repository</a> for more exciting projects!
+        </p>
+    </div>
+
+</body>
+</html>
